@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "LoginPage";
+}
+<div class="body-center">
+    <div class="container">
+        <h3 class="login-head">Login to a world of opportunities!</h3>
+        <form method="post">
+            @Html.ValidationSummary(true)
+            <div class="center-align">
+                <label for="username">Username</label><br>
+                <input class="input-style" type="text" name="username" placeholder="Enter Username" />
+            </div>
+            <div class="center-align">
+                <label for="pwd">Password</label><br>
+                <input class="input-style" type="password" name="pwd" placeholder="Enter Password" />
+            </div>
+            <div class="center-align">
+                <input class="input-style button-style" type="submit" value="Login" />
+            </div>
+            <div class="center-align">
+                <input type="checkbox" name="remember" />&nbsp;Remember Me
+            </div>
+            <div style="padding-bottom: 20px;">
+                <div class="small-block">
+                    <p><span><input class="cancel-button" type="reset" value="Cancel" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forgot  <a href="#!">Password?</a></span></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

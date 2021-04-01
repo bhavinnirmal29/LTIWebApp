@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "RegisterPage";
+}
+
+<div class="body-center">
+    <div class="container">
+        <div class="container">
+            <h3 class="login-head">Register to explore amazing career opportunities</h3>
+        </div>
+        @using (Html.BeginForm())
+        {
+            <div class="center-align">
+                <label for="username">
+                    Username<br>
+                    <input class="input-style" type="text" name="username" placeholder="Enter Username" />
+                </label>
+            </div>
+
+            <div class="center-align">
+                <label for="pwd">
+                    Password<br>
+                    <input class="input-style" type="password" name="pwd" placeholder="Enter Password" />
+                </label>
+            </div>
+            <div class="center-align">
+                <label for="email1">
+                    Email Address<br>
+                    <input class="input-style" type="email" name="email1" placeholder="Enter Email" />
+                </label>
+            </div>
+            <div class="center-align">
+                <label for="city">
+                    City<br>
+                    <input class="input-style" type="text" name="city" placeholder="Enter City" />
+                </label>
+            </div>
+            <div class="center-align">
+                <label for="mobile">
+                    Mobile No.<br>
+                    <input class="input-style" type="text" name="mobile" placeholder="Enter Mobile No." />
+                </label>
+            </div>
+            <div class="center-align">
+                <input class="input-style register-button-style" type="submit" value="Register" />
+            </div>
+        }
+    </div>
+</div>
+
